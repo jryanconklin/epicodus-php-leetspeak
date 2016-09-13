@@ -17,30 +17,30 @@ To use the code, you can clone the repository at [https://github.com/jryanconkli
 #### Specification 1 ####
 *Replace the letter "e" with the number "3".*
 
-__Input__: beowulf
+__Input__: "e"
 
-__Output__: Beowulf
+__Output__: 3
 
 #### Specification 2 ####
 *The letter "o" should be replaced with the number "0."*
 
-__Input__: o
+__Input__: "o"
 
 __Output__: 0
 
 #### Specification 3 ####
 *The capital letter (not the lower case), "I", should be replaced with "1".*
 
-__Input__: I
+__Input__: "I"
 
 __Output__: 1
 
 #### Specification 4 ####
 *All instances of "s" should be replaced with "z" UNLESS it is the first letter of the word.*
 
-__Input__: s
+__Input__: "s"
 
-__Output__: z
+__Output__: "z"
 
 
 ## Author/s
