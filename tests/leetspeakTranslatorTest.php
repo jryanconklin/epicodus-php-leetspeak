@@ -16,10 +16,46 @@
 
             //Assert
             $this->assertEquals(array("3"), $result);
-
         }
 
+        function test_makeLeet_o()
+        {
+            //Arrange
+            $test_LeetSpeakTranslator = new LeetSpeakTranslator;
+            $input = "o";
 
+            //Act
+            $result = $test_LeetSpeakTranslator->makeLeet($input);
+
+            //Assert
+            $this->assertEquals(array("0"), $result);
+        }
+
+        function test_makeLeet_I()
+        {
+            //Arrange
+            $test_LeetSpeakTranslator = new LeetSpeakTranslator;
+            $input = "I";
+
+            //Act
+            $result = $test_LeetSpeakTranslator->makeLeet($input);
+
+            //Assert
+            $this->assertEquals(array("1"), $result);
+        }
+
+        function test_makeLeet_anyS()
+        {
+            //Arrange
+            $test_LeetSpeakTranslator = new LeetSpeakTranslator;
+            $input = "s";
+
+            //Act
+            $result = $test_LeetSpeakTranslator->makeLeet($input);
+
+            //Assert
+            $this->assertEquals(array("z"), $result);
+        }
 
 
     }
