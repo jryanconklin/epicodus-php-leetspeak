@@ -4,26 +4,24 @@
     {
         function makeLeet($input)
         {
-            $input = str_split($input);
+
+            $input_array = str_split($input);
             $output_array = array();
 
-            foreach($input as $letter) {
-                if ($letter == "e") {
+            foreach($input_array as $letter) {
+                if ($letter == "e" || $letter == "E") {
                     array_push($output_array, "3");
-                } elseif ($letter == "o") {
+                } elseif ($letter == "o" || $letter == "O") {
                     array_push($output_array, "0");
                 } elseif ($letter == "I") {
                     array_push($output_array, "1");
-                } elseif ($letter == "s") {
+                } elseif ($letter == "s" || $letter == "S") {
                     array_push($output_array, "z");
                 } else {
                     array_push($output_array, $letter);
                 }
                 return $output_array;
             }
-
-
-
         }
     }
 

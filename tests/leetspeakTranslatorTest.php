@@ -44,17 +44,17 @@
             $this->assertEquals(array("1"), $result);
         }
 
-        function test_makeLeet_anyS()
+        function test_makeLeet_S()
         {
             //Arrange
             $test_LeetSpeakTranslator = new LeetSpeakTranslator;
-            $input = "s";
+            $input = "sees bees";
 
             //Act
             $result = $test_LeetSpeakTranslator->makeLeet($input);
 
             //Assert
-            $this->assertEquals(array("z"), $result);
+            $this->assertEquals(array("s", "3", "3", "z"), $result);
         }
 
 
